@@ -1,0 +1,25 @@
+{
+  "name": "testdoc",
+  "version": "0.0.1",
+  "description": "clientbase test documentation",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clientbase-doc/testdoc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clientbase-doc/testdoc/issues"
+  },
+  "homepage": "https://github.com/clientbase-doc/testdoc#readme",
+  "devDependencies": {
+    "@vuepress/plugin-search": "^2.0.0-beta.60",
+    "vuepress": "^2.0.0-beta.60"
+  }
+}
