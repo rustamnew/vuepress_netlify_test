@@ -20,3 +20,31 @@ collections:
       - {label: "Featured Image", name: "image", widget: "image", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime", required: false}
       - {label: "Categories", name: "categories", widget: "list"}
+
+  - name: "guide" # Used in routes, e.g., /admin/collections/blog
+    label: "guide" # Used in the UI
+    folder: "docs/guide" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    show_preview_links: true
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Publish Date", name: "date", widget: "datetime", required: false}
+      - {label: "Categories", name: "categories", widget: "list"}
+
+  - name: "manual" # Used in routes, e.g., /admin/collections/blog
+    label: "manual" # Used in the UI
+    folder: "docs/manual" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    show_preview_links: true
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Publish Date", name: "date", widget: "datetime", required: false}
+      - {label: "Categories", name: "categories", widget: "list"}
