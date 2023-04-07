@@ -1,7 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
   branch: main
-media_folder: "media"
+media_folder: ".vuepress/public/"
+public_folder: "../../"
 publish_mode: editorial_workflow
 
 collections:
