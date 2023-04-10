@@ -3,7 +3,7 @@ backend:
   repo: rustamnew/vuepress_netlify_test #OK
   branch: main #OK
 media_folder: "docs/.vuepress/public/images/"
-public_folder: "images/"
+public_folder: "docs/.vuepress/dist/"
 publish_mode: editorial_workflow #OK
 
 collections:
