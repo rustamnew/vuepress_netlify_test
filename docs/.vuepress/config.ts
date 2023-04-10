@@ -1,6 +1,20 @@
 import { defaultTheme } from 'vuepress'
 import { searchPlugin } from '@vuepress/plugin-search'
 
+//var getChildren = require('./childscript');
+import * as fs from 'fs'
+
+const getChildren = function(path) {
+  var files = fs.readdirSync(path);
+  var list = [""];
+  for (var i in files) {
+    var filename = files[i].split('.').slice(0, -1).join('.');
+    if (filename.toLowerCase() !=="readme") list.push(filename);
+  }
+  console.log(`${path}: `, list);
+  return list;
+}
+
 export default {
     lang: 'ru-RU',
     //base: '/testdoc/',
@@ -58,14 +72,14 @@ export default {
                 '/manual/other/footer_tuning/',
               ],
             },
-            {
-              text: 'Тест',
-              collapsible: true,
-              children: [
-                '/manual/testmanual',
-              ],
-            },
           ],
+          '/test_cms/': [
+            {
+              text: 'Тестовый сайдбар',
+              collapsible: true,
+              children: getChildren('./docs/test_cms'),
+            },
+          ]
         },
       }),
     plugins: [
