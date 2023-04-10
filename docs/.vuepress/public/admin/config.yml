@@ -16,4 +16,3 @@ collections:
     fields: #OK # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Featured Image", name: "heroImage", widget: "image", required: false}

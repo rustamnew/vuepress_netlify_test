@@ -25,49 +25,7 @@ export default {
             link: 'https://clientbase.ru/support/form.html',
           },
         ],
-        sidebar: {
-          '/manual/': [
-            {
-              text: 'Конструктор таблиц',
-              collapsible: true,
-              children: [
-                '/manual/tables/field_type/'
-              ]
-            },
-            {
-              text: 'Изучение программы',
-              collapsible: true,
-              children: [
-                '/manual/first_steps/start/'
-              ]
-            },
-            {
-              text: 'Пользователю',
-              collapsible: true,
-              children: [
-                '/manual/user/desktop/',
-                '/manual/user/LK/',
-              ],
-            
-            },
-            {
-              text: 'Другое',
-              collapsible: true,
-              children: [
-                '/manual/other/disable_copyright/',
-                '/manual/other/footer_tuning/',
-              ],
-            },
-            {
-              text: 'Тест',
-              collapsible: true,
-              children: [
-                '/manual/testmanual',
-                '/manual/testmanual',
-              ],
-            },
-          ],
-        },
+        sidebar: 'auto'
       }),
     plugins: [
         searchPlugin({
