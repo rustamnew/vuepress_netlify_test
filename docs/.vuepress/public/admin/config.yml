@@ -38,8 +38,9 @@ collections:
 
   - name: "manual" # Used in routes, e.g., /admin/collections/blog
     label: "manual" # Used in the UI
-    folder: "docs/manual/{{slug}}" # The path to the folder where the documents are stored
+    folder: "docs/manual/" # The path to the folder where the documents are stored
     output: true
+    preview_path: "{{slug}}/{{slug}}"
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     show_preview_links: true
